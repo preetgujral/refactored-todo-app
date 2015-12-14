@@ -1,0 +1,31 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "simple todo application",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --exec './node_modules/.bin/nf start'"
+  },
+  "keywords": [
+    "todo",
+    "app"
+  ],
+  "author": "Brian Nations",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-restify-mongoose": "^2.3.1",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.1.0",
+    "mongoose": "^4.2.10"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-http": "^1.0.0",
+    "foreman": "^1.4.1",
+    "mocha": "^2.3.4",
+    "morgan": "^1.6.1",
+    "nf": "0.0.3"
+  }
+}
