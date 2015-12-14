@@ -1,33 +1,20 @@
 module.exports = {
-    entry: './index.js',
+    entry: './app.js',
     output: {
         path: '../server/public',
         filename: 'bundle.js'
     },
     devtool: 'source-map',
     module: {
-        // preLoaders: [
-            // {
-                // test: /\.js$/, // include .js files
-                // exclude: /node_modules/, // exclude any and all files in the node_modules folder
-                // loader: "jshint-loader"
-            // }
-        // ],
         loaders: [
             {
                 test: /\.scss$/,
                 loader: 'style!css?sourceMap!sass?sourceMap'
+            },
+            {
+              test: /\.html$/,
+              loader: "html-loader"
             }
-            // {
-                // test: /\.jsx?$/,
-                // exclude: /node_modules/,
-                // loader: 'babel',
-                // query: {
-                    // presets: ['es2015'] //,
-                    // cacheDirectory: true,
-                    // plugins: ['transform-runtime']
-                // }
-            // }
         ]
     },
     sassLoader: {

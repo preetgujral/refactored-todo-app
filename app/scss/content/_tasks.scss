@@ -25,7 +25,7 @@ section[role="add-task"] {
     }
 }
 
-.completed-tasks li span.item {
+.completed-tasks span.item {
     display: block;
     width: 96%;
     margin-bottom: 25px;
@@ -54,15 +54,4 @@ section[role="add-task"] {
     margin-top: 25px;
     margin-left: 0px;
     width: 50%;
-}
-
-.status-bar {
-    background: $std-msg;
-    padding: 15px;
-    color: $body-bg;
-
-    .search-box {
-        width: 500px;
-        margin-bottom: 0px;
-    }
 }
